@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="font-awesome"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- he first line aahe  -->
+      <div class="top-strip text-center text-white py-1">
+        <b
+          >*This is only a brand name and does not represent its true nature.</b
+        >
+      </div>
+
+      <!-- white background madhl area  -->
+      <div class="main-header py-3 bg-white">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Left: Logo -->
+          <div class="d-flex align-items-center gap-3 naturals_logo">
+            <img
+              src="./images/logo/Logo-with-asterisk-01-1.jpg"
+              alt="Naturals"
+              height="50"
+            />
+            <div>
+              <button class="btn order-btn">Order Now</button>
+            </div>
+          </div>
+
+          <!-- Right: Search -->
+          <!-- <div class="d-flex">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="I'm looking for..."
+            />
+            <button class="btn search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div> -->
+          <div class="search-box">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="I'm looking for..."
+              />
+
+              <button class="btn search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="navbar custom-navbar align-items-center justify-content-center"
+      >
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tree to Treat </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Legacy </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"> Products </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item nav-item" href="#seasonal">Seasonal</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-item" href="#dryfruit">Dryfruit</a>
+              </li>
+              <li><a class="dropdown-item nav-item" href="#malai">Malai</a></li>
+              <li>
+                <a class="dropdown-item nav-item" href="#special">Special</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-item" href="#choclates">Choclate</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-item" href="#nosugaritems"
+                  >No Sugar Added</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Malai Magic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Franchice Queries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store Locator</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Header samapt hogaya yahape  -->
+
+    <!-- Carousel photos yahape hongi -->
+    <div>
+      <div
+        id="carouselExampleControlsNoTouching"
+        class="carousel slide"
+        data-bs-touch="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/corosol/Orange-Pistachio-1920-x-600_Website-Banner (1).jpg"
+              class="d-block w-100"
+              alt="Orange-Pistachio"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/corosol/Malai-Khurma-1920-x-600_Website-Banner-2-1.jpg"
+              class="d-block w-100"
+              alt="Malai-Khurma"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/corosol/Tree-To-Treat-Website_-Assets_Home-page-Banner-size-desktop-1920-×-600-px-.png"
+              class="d-block w-100"
+              alt="tree-to-treat"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- yahape carousel khatam hota hain  -->
+
+    <!-- yahape video section ka div chalu hoga  -->
+    <div class="video-box">
+      <div class="white-line m-plus-rounded-1c-regular">
+        <h2>"If I want to sell ice cream, I will invest in trees"</h2>
+        <p>-Late Shri Raghunandan Kamath, Founder, Naturals Ice cream</p>
+      </div>
+
+      <!-- video yahase dikhega -->
+      <div class="video-section" onclick="playVideo()">
+        <img src="/images/thumbnail/Thumbanil.png" id="thumbnail" />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/csk-oB1b_k0?si=PsuTDmL7xi2XUe4A"
+          title="YouTube video player"
+          id="video"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- yahape video section ka div khatam hua -->
+
+    <!-- 4 photo wala div chalu hoagaya (junglee section) -->
+    <div class="junglee">
+      <div class="card">
+        <img src="/images/junglee/image1.png" alt="" />
+      </div>
+
+      <div class="card">
+        <img src="/images/junglee/image2.png" alt="" />
+      </div>
+
+      <div class="card">
+        <img src="/images/junglee/image3.png" alt="" />
+      </div>
+
+      <div class="card">
+        <img src="/images/junglee/image4.png" alt="" />
+      </div>
+    </div>
+    <!-- yahape junglee section khatam hua  -->
+
+    <!-- yahase ice cream menu dikhega  -->
+
+    <div class="seasonal-best">
+      <!-- <div>
+        <img
+          src="/images/background/Asset-10@4x.png"
+          alt="flower1"
+          width="200px"
+          height="200px"
+        />
+      </div> -->
+      <h1>SEASONAL BEST</h1>
+    </div>
+
+    <div class="ice-cream-menu">
+      <!-- ////////////// -->
+      <div class="card" style="width: 18rem">
+        <img src="/images/flavours/one.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">MULBERRY ICE CREAM</h5>
+          <div class="menu-btn">
+            <a href="#" class="btn btn-naturals">BUY</a>
+            <a href="#" class="btn btn-secondary">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////// -->
+      <!-- ////////////// -->
+      <div class="card" style="width: 18rem">
+        <img src="/images/flavours/two.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">GOOSEBERRY ICE CREAM</h5>
+
+          <div class="menu-btn">
+            <a href="#" class="btn btn-naturals">BUY</a>
+            <a href="#" class="btn btn-secondary">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////// -->
+      <!-- ////////////// -->
+      <div class="card" style="width: 18rem">
+        <img src="/images/flavours/three.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">BLUEBERRY ICE CREAM</h5>
+          <div class="menu-btn">
+            <a href="#" class="btn btn-naturals">BUY</a>
+            <a href="#" class="btn btn-secondary">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////// -->
+      <!-- ////////////// -->
+      <div class="card" style="width: 18rem">
+        <img src="/images/flavours/four.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">BLACK CURRENT ICE CREAM</h5>
+
+          <div class="menu-btn">
+            <a href="#" class="btn btn-naturals">BUY</a>
+            <a href="#" class="btn btn-secondary">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////// -->
+      <!-- ////////////// -->
+      <div class="card" style="width: 18rem">
+        <img src="/images/flavours/five.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">MULBERRY ICE CREAM</h5>
+
+          <div class="menu-btn">
+            <a href="#" class="btn btn-naturals">BUY</a>
+            <a href="#" class="btn btn-secondary">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////// -->
+      <!-- ////////////// -->
+      <div class="card" style="width: 18rem">
+        <img src="/images/flavours/two.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">GOOSEBERRY ICE CREAM</h5>
+          <div class="menu-btn">
+            <a href="#" class="btn btn-naturals">BUY</a>
+            <a href="#" class="btn btn-secondary">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////// -->
+    </div>
+    <!-- yahape menu khatam hua ->  kitna ice cream khata hain be tu  -->
+
+    <!-- yahape bacchahua photo lagane ka section -->
+    <div class="imgg">
+      <img src="/images/homeimage/3bottles.jpg" alt="" class="three-bottle" />
+    </div>
+
+    <!-- yahape bacchahua photo ka the end  -->
+
+    <!-- Yahape Ingredients Story lagane ka section -->
+
+    <div>
+      <div class="ingred-story">
+        <h1>INGREDIENTS STORY</h1>
+      </div>
+      <div class="three-card">
+        <!-- Milk -->
+        <div class="card ingred" style="width: 18rem">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-glass-water icon fa-2x"></i>
+            <h1>1. Milk</h1>
+
+            <p class="card-text">
+              Some quick example text to build on the card title.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fruits -->
+        <div class="card ingred" style="width: 18rem">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-apple-whole icon fa-2x"></i>
+            <h1>2. Fruits</h1>
+
+            <p class="card-text">
+              Some quick example text to build on the card title.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sugar -->
+        <div class="card ingred" style="width: 18rem">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-spoon icon fa-2x"></i>
+            <h1>3. Sugar</h1>
+
+            <p class="card-text">
+              Some quick example text to build on the card title.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Yahape Ingredients ka section khatam hove hain  -->
+
+    <!-- Yahape abb milky milky photo aayegi -->
+    <div class="milky">
+      <img src="/images/shortlogo/milkymilky.png" alt="milkyimg" width="100%" />
+    </div>
+
+    <!-- Yahape abb worker bhaiya ki photo aayegi -->
+    <div class="worker-bhaiya card">
+      <img src="/images/junglee/neechewala.png" alt="" />
+    </div>
+    <!-- Yahape abb worker bhaiya ki photo khatam -->
+
+    <!-- Follow On instagram wale nakhre -->
+
+    <div class="follow">
+      <h1>
+        FOLLOW
+        <a href="#" class="insta"> @naturalsicecream</a>
+        ON INSTAGRAM
+      </h1>
+    </div>
+
+    <div class="follow-img">
+      <div>
+        <img
+          src="/images/instapage/insta1.webp"
+          alt="instaimg1"
+          height="365px"
+          width="270px"
+        />
+      </div>
+      <div>
+        <img
+          src="/images/instapage/insta2.webp"
+          alt="instaimg2"
+          height="365px"
+          width="270px"
+        />
+      </div>
+      <div>
+        <img
+          src="/images/instapage/insta3.webp"
+          alt="instaimg2"
+          height="365px"
+        />
+      </div>
+      <div>
+        <img
+          src="/images/instapage/insta4.webp"
+          alt="instaimg2"
+          height="365px"
+        />
+      </div>
+      <div>
+        <img
+          src="/images/instapage/insta5.webp"
+          alt="instaimg2"
+          height="365px"
+        />
+      </div>
+    </div>
+    <!-- Yahape Instapage khatam hota hain -->
+
+    <div class="two-buttons">
+      <button type="button" class="btn btn-naturals">Load More</button>
+      <button type="button" class="btn btn-primary">
+        <i class="fa-brands fa-instagram"></i> Follow on instagram
+      </button>
+    </div>
+
+    <!-- Yahape White Dabba Chalu -->
+    <div class="white-dabba" style="height: 350px; width: 1120px">
+      <div>
+        <div>
+          <h2>
+            <b
+              >From Humble Beginnings to Ice Cream Excellence: The Story of
+              Naturals Ice Cream</b
+            >
+          </h2>
+        </div>
+        <div class="lorem">
+          <p>
+            In the sizzling streets of 1984 Mumbai, amid the tantalizing scent
+            of Pav Bhaji and scorching sun, a young visionary named Mr.
+            Raghunandan Srinivas Kamath embarked on a daring journey. Little did
+            he know that his simple idea would transform into an exhilarating
+            Indian sensation Naturals Ice Cream, making him the pioneer of
+            handcrafted icecream from quintessential fruit-based flavors such as
+            Sitaphal, Tender Coconut, Jackfruit, Muskmelon and Kala Jamun,
+            amongst many more.
+          </p>
+        </div>
+        <div class="btn-white-dabba">
+          <button type="button" class="btn btn-naturals">Load More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Yaha pe Green Footer start hoga  !-->
+    <div class="green-footer">
+      <div class="green-btn">
+        <button type="button" class="btn btn-dark btn-lg">Order Now</button>
+      </div>
+      <div class="also">
+        <h2>
+          <b>Also available On </b>
+        </h2>
+      </div>
+      <div class="swiggy">
+        <a href="#"
+          ><img src="/images/logo/swiggyLogo.png" alt="swiggy" height="80px"
+        /></a>
+        <a href="#"
+          ><img src="/images/logo/logo_zomato-1.png" alt="swiggy" height="60px"
+        /></a>
+      </div>
+    </div>
+    <!-- Yahape Green footer ka the end  -->
+
+    <!-- Yahape Black Footer Start hoga  -->
+    <div class="black-footer">
+      <div class="black-content">
+        <div>
+          Contact Us
+          <div class="vertical-line"></div>
+        </div>  
+        <div>
+          About Naturals
+           <div class="vertical-line"></div>
+        </div>
+        <div>
+          Others
+          <div class="vertical-line"></div>
+        </div>
+        <div>
+          Shop
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- script section  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function playVideo() {
+        document.getElementById("thumbnail").style.display = "none";
+        document.getElementById("video").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

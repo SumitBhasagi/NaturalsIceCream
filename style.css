@@ -1,0 +1,384 @@
+:root {
+  --primary-color: #00ac4e;
+}
+
+body {
+  background-color: #ecf1d2;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.top-strip {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+.naturals_logo {
+  align-content: center;
+  align-items: center;
+}
+
+.main-header {
+  width: 100%;
+  height: 115px;
+  padding: 20px 0px;
+  align-items: center;
+  align-content: center;
+}
+
+.order-btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #00ac4e;
+  color: white;
+}
+
+.custom-navbar {
+  background-color: #39393f;
+  height: 50px;
+  font-size: 14px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-item:hover {
+  color: var(--primary-color) !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.search-box {
+  width: 500px; /* adjust as needed */
+}
+
+.search-input {
+  height: 55px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  padding-left: 15px;
+  background-color: rgb(235, 233, 233);
+}
+
+.search-input:focus {
+  box-shadow: none;
+  border-color: #b1b0b0;
+}
+
+.search-btn {
+  background-color: #28a745; /* green */
+  color: white;
+  border-radius: 1px 1px 1px 1px;
+  width: 60px;
+  border: none;
+}
+
+.search-btn:hover {
+  background-color: #218838;
+}
+
+.search-btn i {
+  font-size: 18px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  padding: 10px;
+  color: #00ac4e;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 20px 20px;
+  color: #00ac4e;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.white-line {
+  background-color: white;
+  text-align: center;
+  width: 75%;
+  height: 150px;
+  max-width: 1200px;
+  padding: 40px 0px 40px 0px;
+  margin: 27px auto 0px auto;
+}
+.white-line h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-section img {
+  width: 75%;
+  max-width: 1200px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.video-section iframe {
+  width: 75%;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.junglee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 60px 20px 10px 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.seasonal-best {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* MAIN CONTAINER */
+.ice-cream-menu {
+  width: 90%;
+  max-width: 1500px;
+  margin: 50px auto; /* centers the whole box */
+  padding-left: 80px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 25px; /* spacing between cards */
+}
+
+.menu-btn {
+  /* align-items: center; */
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.three-bottle {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto; /* centers the whole box */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* spacing between cards */
+}
+
+.ingred-story {
+  text-align: center;
+}
+
+.three-card {
+  width: 90%;
+  max-width: 1200px;
+  margin: 70px auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.ingred {
+  background-color: #ecf1d2;
+  border: none;
+}
+
+.ingred:hover .icon {
+  transform: scale(0.75);
+}
+
+.icon {
+  font-size: 40px; /* increase this value */
+  color: #28a745;
+
+  border: 2px solid #28a745;
+  border-radius: 50%;
+
+  width: 70px; /* increase circle size too */
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+}
+
+.worker-bhaiya {
+  width: 90%;
+  max-width: 1200px;
+  margin: 70px auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.follow {
+  text-align: center;
+}
+
+.insta {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.m-plus-rounded-1c-regular {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.follow-img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.two-buttons {
+  /*  */
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-naturals {
+  background-color: #00ac4e;
+  color: white;
+}
+
+.btn-naturals:hover {
+  background-color: #44cf83;
+}
+
+.white-dabba {
+  background-color: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 70px auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(8, 0, 0, 0.1);
+}
+
+.white-dabba h2 {
+  text-align: center;
+  padding: 60px;
+}
+
+.white-dabba p {
+  padding: 0px 40px 0px 40px;
+}
+
+.lorem {
+  align-items: center;
+  font-size: 14.5px;
+}
+
+.btn-white-dabba {
+  display: flex;
+  justify-content: center;
+}
+
+.green-footer {
+  background-color: var(--primary-color);
+  height: 260px;
+  /* position: relative; */
+}
+
+.green-btn {
+  margin: 0px;
+  /* padding: 60px 0px 0px 0px; */
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.also {
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
+.swiggy {
+  background-color: var(--primary-color);
+  align-items: center;
+  text-align: center;
+}
+
+.black-footer {
+  height: 500px;
+  background-color: #39393f;
+}
+
+.black-content {
+  padding-top: 200px;
+  padding-left: 106px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vertical-line {
+  width: 2px; /* thickness */
+  height: 100px; /* height of line */
+  background-color: white;
+}
