@@ -5,7 +5,10 @@
 body {
   background-color: #ecf1d2;
   font-family:
-    system-ui,
+    playfair display Georgia,
+    "Times New Roman",
+    Times,
+    serif system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -41,6 +44,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #00ac4e;
   color: white;
+}
+
+.order-btn:hover {
+  background-color: #20cb6d;
 }
 
 .custom-navbar {
@@ -116,6 +123,11 @@ body {
 }
 
 .white-line {
+  font-family:
+    playfair display Georgia,
+    "Times New Roman",
+    Times,
+    serif;
   background-color: white;
   text-align: center;
   width: 75%;
@@ -152,6 +164,47 @@ body {
   border-radius: 5px;
 }
 
+.seasonal-best h1 {
+  font-family:
+    fairplay display Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+}
+
+.ice-cream-menu h5 {
+  font-family:
+    fairplay display Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ingred-story h1 {
+  font-family:
+    fairplay display Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+}
+.ingred-story p {
+  font-family:
+    fairplay display Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+}
+
+.white-dabba h2 {
+  font-family:
+    fairplay display Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+}
 .junglee {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,20 +367,23 @@ body {
   justify-content: center;
   gap: 25px;
   border-radius: 10px;
-  box-shadow: 0 10px 10px rgba(8, 0, 0, 0.1);
+  box-shadow: 0 10px 20px 10px rgba(8, 0, 0, 0.1);
 }
 
 .white-dabba h2 {
   text-align: center;
-  padding: 60px;
+  padding: 60px 0 12px 0;
 }
 
 .white-dabba p {
+  text-align: start;
+  justify-content: start;
   padding: 0px 40px 0px 40px;
 }
 
 .lorem {
   align-items: center;
+  text-align: start;
   font-size: 14.5px;
 }
 
@@ -364,21 +420,102 @@ body {
   text-align: center;
 }
 
-.black-footer {
-  height: 500px;
-  background-color: #39393f;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.black-content {
-  padding-top: 200px;
-  padding-left: 106px;
-  color: white;
+/* Footer Background */
+.footer {
+  background-color: #3d3d43;
+  color: #ffffff;
+  padding: 80px 100px 40px;
+}
+
+/* Main Layout */
+.footer-container {
+  padding: 0 0 0 106px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.vertical-line {
-  width: 2px; /* thickness */
-  height: 100px; /* height of line */
+/* Columns */
+.footer-col {
+  max-width: auto;
+  padding: 0 70px 0 0;
+}
+
+/* Headings */
+.footer-col h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #bfbfbf;
+  margin-bottom: 20px;
+}
+
+.footer-col h5 {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+/* Text */
+.footer-col p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.footer-col p:hover {
+  color: #ffffff;
+}
+
+.divider {
+  width: 1px;
   background-color: white;
+  align-self: stretch;
+}
+
+/* .vertical-line {
+  width: 1px;
+  background-color: #888;
+  align-self: stretch;
+} */
+
+/* Icons text spacing */
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons div {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #2e2e33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.social-icons div:hover {
+  background-color: #555;
+}
+
+.fa-brands {
+  color: white;
 }
