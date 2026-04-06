@@ -362,8 +362,10 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 70px auto;
+  padding: 20px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 25px;
   border-radius: 10px;
@@ -381,9 +383,17 @@ body {
   padding: 0px 40px 0px 40px;
 }
 
-.lorem {
+/* .lorem {
   align-items: center;
   text-align: start;
+  font-size: 14.5px;
+} */
+
+.lorem {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; /* Centers the entire paragraph block */
+  text-align: justify;
   font-size: 14.5px;
 }
 
@@ -518,4 +528,30 @@ body {
 
 .fa-brands {
   color: white;
+}
+
+.lorem p {
+  max-height: 80px;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.btn-white-dabba {
+  margin-top: 10px;
+}
+.lorem p.expanded {
+  max-height: 800px;
+}
+
+.more-text-area {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; /* This centers it */
+  text-align: justify;
+  display: none;
+  align-items: center;
+  padding-left: 40px;
+}
+.more-text-area.show {
+  display: block;
 }
